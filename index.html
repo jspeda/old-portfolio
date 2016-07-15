@@ -12,12 +12,51 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+<script>
+    $(document).ready(function(){
+    $('.jumbotron').fadeIn(750, 'swing');
+});
 
+
+    /* $(function(){
+     var h3Element = $('h3');
+
+     var button = $('#button');
+     button.click(function() {
+      var detailInput = $('#detail');
+      var detailInputVal = detailInput.val();
+      var fact = {
+        "fact" : {
+          "details" : detailInputVal
+        }
+      };
+      $.post( "http://www.catfact.info/api/v1/facts.json", fact, function( data ) {
+       console.log(data);
+      });
+
+     });
+      h3Element.click(function() {
+        $.get( "http://www.catfact.info/api/v1/facts.json?page=1&per_page=3", function( data ) {
+         var detail = data.facts[0].details;
+         h3Element.html(detail);
+        });
+
+      });
+   });
+
+*/
+</script>
+<script src="jquery.countdown.min.js"></script>
+
+<div id="wrapper">
 <nav class ="navbar navbar-default">
   <div class="container-fluid">
+    <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+    </button> !-->
     <div class="navbar-header">
+    <span class="sr-only">Toggle Navigation</span>
       <a class="navbar-brand" href="index.html">JOSEPH ELADEPS</a>
-      
+     
     </div>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="bio.html">Bio</a></li>
@@ -33,19 +72,37 @@
 <br />
 <br />
 <br />
-<div class="jumbotron vertical-center col-xs-4 col-xs-offset-4">
-  <h3 class="text-center">web development and design</h3>
+<div class="jumbotron vertical-center col-sm-4 col-sm-offset-4 col-xs-8 col-xs-offset-2">
+  <h2 class="text-center jumboheader">web development and design</h2>
+</div>
+
+
+<!-- <div class="jumbotron vertical-center col-xs-4 col-xs-offset-4">
+<input id="detail" />
+<button id="button">CLICK ME</button>
+</div> !-->
 
     
 </div>
 
 
+<!-- <div class="jumbotron vertical-center col-xs-4 col-xs-offset-4 text-center">
+ <div id="getting-started"></div>
+ <script type="text/javascript">
+   $("#getting-started")
+   .countdown("2017/01/01", function(event) {
+     $(this).text(
+       event.strftime('%D days %H:%M:%S')
+     );
+  });
+ </script>
+
+</div> !-->
 
 
 
 
-
-
+</div>
 
 </body>
 </html>

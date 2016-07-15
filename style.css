@@ -17,7 +17,8 @@ body {
   border-radius: 0;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
-  opacity: .8;
+  background: rgba(255,255,255,0.75);
+  /* opacity: .8; */
 }
 
 .navbar-brand {
@@ -33,9 +34,53 @@ body {
 }
 
 .jumbotron {
-  opacity: .8;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 700;
+   background: rgba(255,255,255,0.75);
+  /* opacity: .8; */
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700; 
+  display: none;
 
+}
+
+.jumboheader {
+  font-family: 'Oswald', sans-serif;
+}
+
+/* #wrapper {
+  display: none;
+} */
+
+.biotext {
+  font-weight: 100;
+}
+
+#biobox {
+  padding-top: 0;
+}
+
+hr {
+  clear: both;
+  /* background: rgba(0,0,0,0.10); */
+  height: 4px;
+}
+
+.devicon-rails-plain {
+  height: 100px;
+}
+
+.icons {
+  height: 100px;
+}
+
+br {
+  clear: both;
+}
+
+ .grayscale {
+  -webkit-filter: grayscale(50%); filter: grayscale(50%);
+} 
+
+#biopic {
+  height: 300px;
 }
 
